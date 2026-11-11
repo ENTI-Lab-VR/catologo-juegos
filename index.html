@@ -3,46 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#991277" />
+  <meta name="theme-color" content="#a4167f" />
   <title>Playfolio · Catálogo de juegos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="logo" href="#inicio" aria-label="Playfolio, ir al inicio">P</a>
+      <a class="logo" href="#inicio" aria-label="Playfolio, ir al inicio">
+        <span class="logo-hex"><img class="logo-img" src="assets/logos/lab.png" alt=""></span>
+        <span class="logo-text"><strong>PLAYFOLIO</strong><small>Catálogo de videojuegos</small></span>
+      </a>
       <nav aria-label="Navegación principal">
         <a href="#catalogo">Catálogo</a><a href="#buscar">Buscar</a><a href="#plataformas">Plataformas</a>
       </nav>
     </div>
   </header>
-  <main id="inicio" class="page-wrap">
-    <section class="intro" aria-labelledby="titulo">
-      <div class="eyebrow">ELIGE TU PRÓXIMA PARTIDA</div>
-      <div class="intro-line"><h1 id="titulo">Catálogo de todos los juegos</h1><p class="counter"><strong id="gameCount">12</strong> <span id="counterLabel">juegos disponibles</span></p></div>
-    </section>
-    <section class="search-section" id="buscar" aria-label="Buscar juegos">
-      <label class="search-box" for="searchInput"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.1"/><path d="m15.4 15.4 4.3 4.3"/></svg><input id="searchInput" type="search" placeholder="Buscar un juego..." autocomplete="off" /></label>
-    </section>
-    <section class="platforms" id="plataformas" aria-label="Filtrar por plataforma"><div id="platformFilters" class="platform-list"></div></section>
-    <section class="catalog-layout" id="catalogo" aria-label="Catálogo de videojuegos">
-      <aside class="sidebar" aria-label="Filtros adicionales">
-        <div class="filter-block"><h2>GÉNEROS</h2><div id="genreFilters" class="chip-grid"></div></div>
-        <div class="filter-block"><h2>JUGADORES</h2><div id="playerFilters" class="chip-grid"></div></div>
-        <button id="clearFilters" class="clear-filters" type="button">Limpiar filtros ↺</button>
-      </aside>
-      <div class="catalog-main">
-        <div class="catalog-meta"><span>ORDENADOS DE A–Z</span><span>Haz clic en una portada para saber más</span></div>
-        <div id="gameGrid" class="game-grid"></div>
-        <p id="emptyState" class="empty-state" hidden>No encontramos juegos con estos filtros. <button id="resetEmpty" type="button">Limpiar filtros</button></p>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="titulo">
+      <span class="hero-hex hex-a" aria-hidden="true"></span>
+      <span class="hero-hex hex-b" aria-hidden="true"></span>
+      <span class="hero-hex hex-c" aria-hidden="true"></span>
+      <div class="hero-inner">
+        <p class="eyebrow">ELIGE TU PRÓXIMA PARTIDA</p>
+        <h1 id="titulo">Catálogo de todos los juegos</h1>
+        <div class="hero-rule"></div>
+        <p class="counter"><strong id="gameCount">12</strong> <span id="counterLabel">juegos disponibles</span></p>
       </div>
     </section>
+
+    <div class="page-wrap">
+      <section class="search-section" id="buscar" aria-label="Buscar juegos">
+        <label class="search-box" for="searchInput">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.1"/><path d="m15.4 15.4 4.3 4.3"/></svg>
+          <input id="searchInput" type="search" placeholder="Buscar un juego, plataforma o género..." autocomplete="off" />
+        </label>
+      </section>
+
+      <section class="platforms" id="plataformas" aria-labelledby="platformsTitle">
+        <header class="section-head"><h2 id="platformsTitle">Plataformas</h2></header>
+        <div id="platformFilters" class="platform-list"></div>
+      </section>
+
+      <section class="catalog-layout" id="catalogo" aria-label="Catálogo de videojuegos">
+        <aside class="sidebar" aria-label="Filtros adicionales">
+          <div class="filter-block"><h3>Géneros</h3><div id="genreFilters" class="chip-grid"></div></div>
+          <div class="filter-block"><h3>Jugadores</h3><div id="playerFilters" class="chip-grid"></div></div>
+          <button id="clearFilters" class="clear-filters" type="button">Limpiar filtros</button>
+        </aside>
+        <div class="catalog-main">
+          <header class="section-head">
+            <h2>Juegos</h2>
+            <p class="catalog-meta"><span>Ordenados de la A a la Z</span><span>Haz clic en una portada para saber más</span></p>
+          </header>
+          <div id="gameGrid" class="game-grid"></div>
+          <p id="emptyState" class="empty-state" hidden>No encontramos juegos con estos filtros. <button id="resetEmpty" type="button">Limpiar filtros</button></p>
+        </div>
+      </section>
+    </div>
   </main>
-  <footer class="footer">Playfolio · Tu próximo juego te está esperando.</footer>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="logo-hex small">P</span>
+      <p><strong>Playfolio</strong> · Tu próximo juego te está esperando.</p>
+    </div>
+  </footer>
+
   <dialog id="gameDialog" class="game-dialog" aria-labelledby="dialogTitle">
     <button class="modal-close" id="closeDialog" aria-label="Cerrar información">×</button>
     <div id="dialogContent"></div>
