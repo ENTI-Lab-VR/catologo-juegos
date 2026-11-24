@@ -3,6 +3,7 @@ const COVER_PATH='assets/gamesPicture/';
 
 // file: nombre del archivo dentro de assets/gamesPicture (cámbialo cuando tengas las portadas)
 const games=[
+ {title:'Grand Theft Auto VI',alias:'GTA VI',platform:'PlayStation 5',genre:'Acción',players:1,file:'grandTheftAutoVI.jpg',description:'Un golpe fallido arrastra a Jason y Lucía a una conspiración criminal que se extiende desde Vice City por todo el estado de Leonida.'},
  {title:'Gran Turismo 7',platform:'PlayStation 5',genre:'Carreras',players:2,file:'granTurismo7.jpg',description:'Simulador de conducción con cientos de coches reales, circuitos de todo el mundo y un café para aprender su historia.'},
  {title:'Gris',platform:'PlayStation 5',genre:'Plataformas',players:1,file:'Gris.jpg',description:'Una aventura de plataformas en acuarela sobre una joven que atraviesa el duelo.'},
  {title:'Sackboy: Una Aventura A Lo Grande',platform:'PlayStation 5',genre:'Plataformas',players:4,file:'sackboyUnaAventuraALoGrande.jpg',description:'Plataformas 3D con Sackboy para salvar Craftworld, solo o con hasta cuatro jugadores.'},
@@ -41,7 +42,7 @@ const games=[
  {title:'Rayman Legends',platform:'PlayStation 4',genre:'Plataformas',players:4,file:'raymanLegends.jpg',description:'Plataformas 2D con niveles musicales y cooperativo para cuatro personas.'},
  {title:'Rayman Legends',platform:'PlayStation Vita',genre:'Plataformas',players:1,file:'raymanLegendsVita.jpg',description:'Plataformas 2D con niveles musicales, adaptado a la pantalla táctil de la Vita.'},
  {title:'Resident Evil 5',platform:'PlayStation 4',genre:'Terror',players:2,file:'residentEvil5.jpg',description:'Chris Redfield y Sheva Alomar investigan un brote biológico en África, solos o en cooperativo.'},
- {title:'Rocket League (Anniversary Edition)',platform:'PlayStation 4',genre:'Deportes',players:4,file:'rocketLeague.jpg',description:'Fútbol con coches propulsados por cohetes, en partidas rápidas y muy competitivas.'},
+ {title:"Rocket League (Collector's Edition)",platform:'PlayStation 4',genre:'Deportes',players:4,file:'rocketLeague.jpg',description:'Fútbol con coches propulsados por cohetes, en partidas rápidas y muy competitivas.'},
  {title:'Saber es Poder',platform:'PlayStation 4',genre:'Party',players:6,file:'saberEsPoder.jpg',description:'Concurso de preguntas con trampas y poderes para fastidiar al resto, jugando con el móvil.'},
  {title:'SingStar Celebration',platform:'PlayStation 4',genre:'Party',players:8,file:'singStarCelebration.jpg',description:'Karaoke con éxitos actuales usando el móvil como micrófono.'},
  {title:'The Evil Within',platform:'PlayStation 4',genre:'Terror',players:1,file:'theEvilWithin.jpg',description:'Survival horror de Shinji Mikami en un mundo retorcido y lleno de criaturas.'},
@@ -63,6 +64,17 @@ const games=[
  {title:'Super Mario Maker 2',platform:'Nintendo Switch',genre:'Plataformas',players:4,file:'superMarioMaker2.jpg',description:'Crea tus propios niveles de Mario, compártelos y juega los de otras personas.'},
  {title:'Super Mario Party',platform:'Nintendo Switch',genre:'Party',players:4,file:'superMarioParty.jpg',description:'Dados, tableros y minijuegos que aprovechan los Joy-Con para jugar en grupo.'},
  {title:'WarioWare: Get It Together!',platform:'Nintendo Switch',genre:'Party',players:4,file:'warioWareGetItTogether.jpg',description:'Cientos de microjuegos frenéticos de pocos segundos, solo o en compañía.'},
+ {title:'Pokémon Pokopia',platform:'Nintendo Switch 2',genre:'Simulación',players:1,file:'pokemonPokopia.jpg',description:'Ponte en la piel de Ditto, aprende habilidades de otros Pokémon y construye hábitats para que vuelvan a poblar el mundo.'},
+ {title:'Nintendo Switch Sports Resort',platform:'Nintendo Switch 2',genre:'Deportes',players:4,file:'nintendoSwitchSportsResort.jpg',description:'Explora la isla Wuhu y compite con los Joy-Con 2 en doce deportes, entre ellos el tenis, el tiro con arco y el skate.'},
+ {title:'Mario Tennis Fever',platform:'Nintendo Switch 2',genre:'Deportes',players:4,file:'marioTennisFever.jpg',description:'Juega partidos individuales o de dobles con Mario y sus amigos, y usa raquetas especiales para darle la vuelta a cada punto.'},
+ {title:'Orbitals',platform:'Nintendo Switch 2',genre:'Aventura',players:2,file:'orbitals.jpg',description:'Pilota una nave y resuelve puzles en pareja mientras Maki y Omura buscan ayuda para su estación espacial.'},
+ {title:'The Adventures of Elliot: The Millennium Tales',platform:'Nintendo Switch 2',genre:'RPG',players:2,file:'theAdventuresOfElliot.jpg',description:'Acompaña a Elliot y al hada Faie a través de cuatro épocas en un RPG de acción con escenarios en HD-2D.'},
+ {title:'Metroid Prime 4: Beyond – Nintendo Switch 2 Edition',platform:'Nintendo Switch 2',genre:'Acción',players:1,file:'metroidPrime4Beyond.jpg',description:'Explora el planeta Viewros con Samus Aran y usa sus poderes psíquicos para resolver puzles y abrirte paso.'},
+ {title:'Donkey Kong Bananza',platform:'Nintendo Switch 2',genre:'Plataformas',players:2,file:'donkeyKongBananza.jpg',description:'Rompe rocas, excava túneles y explora un mundo subterráneo con Donkey Kong y Pauline.'},
+ {title:'Star Fox',platform:'Nintendo Switch 2',genre:'Acción',players:4,file:'starFox.jpg',description:'Pilota el Arwing de Fox McCloud y combate a las fuerzas de Andross para defender el sistema Lylat.'},
+ {title:'Yoshi and the Mysterious Book',platform:'Nintendo Switch 2',genre:'Plataformas',players:1,file:'yoshiAndTheMysteriousBook.jpg',description:'Salta entre las páginas de un libro parlante y descubre cómo se comportan las criaturas que viven en él.'},
+ {title:'Splatoon Raiders',platform:'Nintendo Switch 2',genre:'Acción',players:1,file:'splatoonRaiders.jpg',description:'Viaja a las islas Espirales con el Clan Surimi y usa tus artilugios y armas de tinta para buscar tesoros entre hordas de salmónidos.'},
+ {title:'Kirby Air Riders',platform:'Nintendo Switch 2',genre:'Carreras',players:4,file:'kirbyAirRiders.jpg',description:'Compite con Kirby y sus rivales en máquinas voladoras y reúne mejoras por la ciudad antes de la prueba final.'},
  {title:'Deus Ex: Invisible War',platform:'PC',genre:'RPG',players:1,file:'deusExInvisibleWar.jpg',description:'Rol y acción en un futuro ciberpunk donde cada misión se puede resolver de varias formas.'},
  {title:'Els Sostenibles IV',platform:'PC',genre:'Aventura',players:1,file:'elsSosteniblesIV.jpg',description:'Cuarta entrega de Els Sostenibles.'},
  {title:'Indie Basement Collection',platform:'PC',genre:'Aventura',players:1,file:'indieBasementCollection.jpg',description:'Recopilatorio de juegos independientes.'},
@@ -103,6 +115,7 @@ const platforms=[
  {name:'Todos',file:'todos.png',icon:'grid'},
  {name:'Nintendo 3DS',file:'nintendo-3ds.png',icon:'nintendo'},
  {name:'Nintendo Switch',label:'Switch',file:'switch.png',icon:'nintendo'},
+ {name:'Nintendo Switch 2',label:'Switch 2',file:'switch2.png',icon:'nintendo'},
  {name:'PC',file:'pc.png',icon:'pc'},
  {name:'Películas',file:'dvd.png',icon:'movie'},
  {name:'PlayStation 3',label:'PS3',file:'playstation3.png',icon:'ps'},
@@ -122,7 +135,7 @@ const state={search:'',platform:'Todos',genre:'Todos',players:'Todos'};
 const $=selector=>document.querySelector(selector);
 const sanitize=str=>String(str).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const initials=title=>title.replace(/^The /,'').split(/[\s:]+/).map(w=>w.replace(/^[^\p{L}\p{N}]+/u,'')).filter(w=>/^[\p{Lu}0-9]/u.test(w)).slice(0,2).map(w=>w[0]).join('');
-const playersLabel=(n,upper)=>{const t=n?`${n} ${n===1?'jugador':'jugadores'}`:'Película';return upper?t.toUpperCase():t};
+const playersLabel=n=>n?`${n} ${n===1?'jugador':'jugadores'}`:'Película';
 
 function fallbackIcon(type){
  if(type==='grid')return '<svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>';
@@ -135,7 +148,7 @@ function fallbackIcon(type){
 }
 
 function coverMarkup(g,extraClass=''){
- return `<div class="cover ${extraClass}" data-fallback><img src="${COVER_PATH}${encodeURIComponent(g.file)}" alt="" loading="lazy"><span class="cover-initials" aria-hidden="true">${sanitize(initials(g.title))}</span></div>`;
+ return `<div class="cover ${extraClass}" data-cover-platform="${sanitize(g.platform)}" data-fallback><img src="${COVER_PATH}${encodeURIComponent(g.file)}" alt="" loading="lazy"><span class="cover-initials" aria-hidden="true">${sanitize(initials(g.title))}</span></div>`;
 }
 
 function renderFilters(){
@@ -146,7 +159,7 @@ function renderFilters(){
 
 function matches(game){
  const q=state.search.toLocaleLowerCase('es').trim();
- return (!q||[game.title,game.platform,game.genre].some(v=>v.toLocaleLowerCase('es').includes(q)))
+ return (!q||[game.title,game.platform,game.genre,game.alias].some(v=>v?.toLocaleLowerCase('es').includes(q)))
  &&(state.platform==='Todos'||game.platform===state.platform)
  &&(state.genre==='Todos'||game.genre===state.genre)
  &&(state.players==='Todos'||(state.players==='4+'?game.players>=4:game.players===Number(state.players)));
@@ -155,17 +168,18 @@ function matches(game){
 function renderGames(){
  const filtered=games.filter(matches).sort((a,b)=>a.title.localeCompare(b.title,'es'));
  $('#gameCount').textContent=filtered.length;
- $('#counterLabel').textContent=filtered.length===1?'juego disponible':'juegos disponibles';
+ $('#counterLabel').textContent=filtered.length===1?'juego':'juegos';
  $('#gameGrid').innerHTML=filtered.map(g=>`<article class="game-card">
   <button class="cover-button" type="button" data-game="${games.indexOf(g)}" aria-label="Ver detalles de ${sanitize(g.title)}">
    ${coverMarkup(g)}
-   ${g.featured?'<span class="tag featured">DESTACADO</span>':''}
-   <span class="tag players">${playersLabel(g.players,true)}</span>
   </button>
   <div class="card-details">
-   <span class="platform-tag">${sanitize(g.platform)}</span>
+   <div class="card-labels">
+    <span class="platform-tag">${sanitize(g.platform)}</span>
+    ${g.featured?'<span class="featured-tag">Destacado</span>':''}
+   </div>
    <h3 class="card-title">${sanitize(g.title)}</h3>
-   <p class="card-genre">${sanitize(g.genre)}</p>
+   <p class="card-meta"><span>${sanitize(g.genre)}</span><span>${playersLabel(g.players)}</span></p>
   </div>
  </article>`).join('');
  $('#emptyState').hidden=filtered.length!==0;
